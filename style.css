@@ -1,0 +1,143 @@
+#page {
+    background-attachment: fixed;
+    background-image: url('carlo.jpeg');
+    background-size:  cover;
+    padding-bottom: 5vw;
+    width: 100%;
+    margin-left: 0;
+}
+
+.title{
+    font-family: "My Noto Nastaliq Urdu", "Times New Roman", serif;
+    font-size: clamp(15vw, 15vw, 13rem);
+    text-align: center;
+    line-height: 1.1;
+    font-size-adjust: 0.43;
+    color: floralwhite;
+    text-shadow: 0.25rem 0.25rem rgba(22,22,22,0.7);
+}
+
+.title-subtitle{
+    /*padding-bottom: 2vw;*/
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.subtitle{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.1;
+    color: #e8cc95;
+    font-weight: lighter;
+    padding-top: 2.5vw;
+    padding-left: 0.5rem;
+    text-shadow: 0.125rem 0.125rem rgba(22,22,22,0.9);
+}
+
+
+.grid{
+    display: grid;
+    padding-top: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.categories{
+    background: peachpuff;
+    padding: 1vw;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 0;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-self: center;
+    padding-top: 4rem;
+    width: 90%;
+    justify-content: center ;
+}
+
+@media (max-width: 600px) {
+    #cards{
+        grid-template-columns: 1fr;
+    }
+    .grid{
+        /* So that categories appear stacked in one column */
+        /*grid-template-columns: 1fr;*/
+        padding-top: 0;
+    }
+    #page{
+        background-position: 45%;
+    }
+    .title-subtitle{
+        padding-bottom: 1vw;
+    }
+}
+
+#cards div {
+    display: grid;
+    background-color: rgba(255,250,240,0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+    border-width: 0.125rem;
+    border-color: white;
+    border-style: solid;
+    font-family: "Georgia", serif;
+    font-weight: lighter;
+}
+
+#cards div h1{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#cards div h2{
+    justify-self: center;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#cards div p{
+    justify-self: center;
+    font-size: 1em;
+    text-align: center;
+}
+
+#cards div button{
+    font-size: 1.2em;
+    font-family: "Times New Roman", serif;
+    border-radius: 1.5rem;
+    border-width: 0.125rem;
+    border-color: white;
+    padding: 0.5rem 1rem;
+    background-color: rgba(74,74,74,0.05);
+}
+
+#cards div button:hover{
+    background-color: rgba(160,160,160,0.3);
+}
+
+#load-more{
+    border-radius: 1.5rem;
+    border-width: 0.125rem;
+    border-color: white;
+    padding: 0.5rem 1rem;
+    background-color: rgba(205, 199, 191, 0.87);
+}
+
+#button {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#load-more:hover{
+    background-color: rgb(156, 152, 147);
+}
