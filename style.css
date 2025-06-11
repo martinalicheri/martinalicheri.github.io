@@ -10,7 +10,7 @@
 .title{
     font-family: "My Noto Nastaliq Urdu", "Times New Roman", serif;
     font-size: clamp(15vw, 15vw, 13rem);
-    text-align: center;
+    justify-self: center;
     line-height: 1.1;
     font-size-adjust: 0.43;
     color: floralwhite;
